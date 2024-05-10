@@ -1,0 +1,41 @@
+.SongTableColumn{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ECFDE8;
+    padding: 4px;
+    border: 1;
+    width: 50vh;
+    margin-bottom: 5px ;  
+
+    img{
+        width: 70px;
+        margin-right: 10px;
+        border-radius: 50px;
+    }
+
+    .Table_text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .Song_name{
+            color: var(--green);
+            font-size: 2rem ;
+            font-weight: 700;
+            margin: 0;
+        }
+        .Artist_name{
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+    }
+   
+}
+
+
+

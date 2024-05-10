@@ -1,0 +1,58 @@
+#hometitlediv {
+  min-height: 50vh;
+  min-width: 100%;
+  background-color: var(--green);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hometitlediv h1 {
+  font: var(--font1);
+  font-weight: 700;
+  font-size: 7rem;
+  margin: 2px;
+}
+#hometitlediv h3 {
+  font: var(--font1);
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  #hometitlediv h1 {
+    font-size: 2.3rem;
+  }
+  #hometitlediv h3 {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #hometitlediv h1 {
+    font-size: 5rem;
+  }
+  #hometitlediv h3 {
+    font-size: 1.5rem;
+  }
+}
+/* For laptop devices */
+/* For desktop devices *//*# sourceMappingURL=Home.css.map */
