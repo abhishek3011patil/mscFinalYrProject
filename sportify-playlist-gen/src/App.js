@@ -12,8 +12,9 @@ function App() {
     <div className="App">
     <Header></Header>
     <Home></Home>
-    <SongSearchBar></SongSearchBar>
-    <TestAPI></TestAPI>
+    {/* <TestAPI name="Christmas"></TestAPI> */}
+   <SongSearchBar></SongSearchBar> 
+    
     
     <Footer></Footer>
     </div>

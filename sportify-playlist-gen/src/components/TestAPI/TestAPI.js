@@ -3,21 +3,31 @@ import axios from 'axios';
 import './TestAPI.css'
 import { useState, useEffect } from "react";
 import SongTableColumn from '../SongTableColumn/SongTableColumn.js'
-function TestAPI(){
+function TestAPI(props){
 
     const [songs, setSongs] = useState([]);
 
+
+ 
+
+    
+    
+
     useEffect(() => {
+
+      console.log("testapi: "+props.name)
+      
         axios
           .get(
-            'http://127.0.0.1:5000/get-songName/Disturbia'
+            `http://127.0.0.1:5000/get-songName/${props.name || "Disturbia"}`
           )
           .then(res => {
             setSongs(res.data);
             console.log(res.data); 
           })
           .catch(error => console.log(error));
-      }, []);
+
+      }, [props.name]);
 
     
   
