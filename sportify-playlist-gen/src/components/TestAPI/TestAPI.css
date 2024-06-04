@@ -1,10 +1,36 @@
-.CardContent {
+.TestAPI {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.CardContent:nth-child(2) {
-  background-color: red;
-}/*# sourceMappingURL=TestAPI.css.map */
+.CardContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.CardContent > * {
+  margin: 0;
+  padding: 0;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  .CardContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .CardContent {
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+/* For laptop devices */
+/* For desktop devices *//*# sourceMappingURL=TestAPI.css.map */

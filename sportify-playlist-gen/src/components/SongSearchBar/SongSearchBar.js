@@ -29,9 +29,11 @@ function SongSearchBar() {
     const searchInput = document.getElementById('query');
 
     const handleInput = (event) => {
+
       const searchText = event.target.value.toLowerCase();
       const filteredSongs = filteredSongNames.filter(song => song.toLowerCase().includes(searchText));
       displaySuggestions(filteredSongs, 10);
+    
     };
 
     searchInput.addEventListener('input', handleInput);
@@ -50,7 +52,7 @@ function SongSearchBar() {
     setSelectedSong(searchInput.value);
     console.log(selectedSong)
   };
-  
+
 
   const songNameFilterer = (data) => {
     let songsNameArray = [];
@@ -79,7 +81,7 @@ function SongSearchBar() {
   };
 
   return (
-    <div>
+    <div className='SongSearchBar'>
       <div id="search">
         <form role="search" id="form" onSubmit={handleSubmit}>
           <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content" />

@@ -1,32 +1,32 @@
 .SongTableColumn {
+  margin-top: 20px;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  background-color: #ECFDE8;
-  padding: 4px;
-  border: 1;
-  width: 50vh;
-  margin-bottom: 5px;
-}
-.SongTableColumn img {
-  width: 70px;
-  margin-right: 10px;
-  border-radius: 50px;
-}
-.SongTableColumn .Table_text {
-  display: flex;
+  padding: 1rem;
   flex-direction: column;
   align-items: start;
+  background-color: var(--green);
+  max-width: 22rem;
 }
-.SongTableColumn .Table_text .Song_name {
-  color: var(--green);
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
+.SongTableColumn img {
+  max-width: 20rem;
+  margin-bottom: 5px;
 }
-.SongTableColumn .Table_text .Artist_name {
-  margin: 0;
-  font-size: 1.2rem;
+.SongTableColumn .Song_name {
   font-weight: 700;
-}/*# sourceMappingURL=SongTableColumn.css.map */
+  font-size: 1.5rem;
+  white-space: pre-line;
+}
+.SongTableColumn .Artist_name {
+  font-weight: 500;
+  color: white;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  .SongTableColumn img {
+    max-width: 20rem;
+  }
+}
+/* for tablet devices */
+/* For laptop devices */
+/* For desktop devices *//*# sourceMappingURL=SongTableColumn.css.map */

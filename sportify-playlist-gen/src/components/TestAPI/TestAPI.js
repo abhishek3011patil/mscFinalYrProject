@@ -19,7 +19,7 @@ function TestAPI(props){
       
         axios
           .get(
-            `http://127.0.0.1:5000/get-songName/${props.name || "Disturbia"}`
+            `http://127.0.0.1:5000/get-songName/${props.name || "Drowse"}`
           )
           .then(res => {
             setSongs(res.data);
@@ -28,6 +28,7 @@ function TestAPI(props){
           .catch(error => console.log(error));
 
       }, [props.name]);
+      
 
     
   

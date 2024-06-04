@@ -8,30 +8,33 @@ function Footer() {
   return (
     <div className='Footer'>
 
-     <div className="pageLinks">
+      <div className="pageLinksSection">
+        <p>Useful links:</p>
+
+        <div className="pageLinks">
+
          <a href="">Home</a>
          <a href="">Playlist Generator</a>
         <a href="">Contact</a>
-     </div>
 
-    
+        </div>
 
-      <div className="iconsList">
-       
-      <CiInstagram size={40}/>
-      <CiFacebook size={40}/>
-      <CiLinkedin size={40}/>
-      <FaGithub size={40}/>
       </div>
 
+     <div className="iconSection">
 
+    <p>Also Contact Us on:</p>
 
-       <p> &#169;2024 Abhishek Patil </p>
+     <div className="iconsList">
+       <CiInstagram size={40}/>
+       <CiFacebook size={40}/>
+       <CiLinkedin size={40}/>
+       <FaGithub size={40}/>
+       </div>
+ 
+     </div>
 
-
-    
-
-        
+       <p> &#169;2024 Abhishek Patil </p>        
     </div>
   )
 }
