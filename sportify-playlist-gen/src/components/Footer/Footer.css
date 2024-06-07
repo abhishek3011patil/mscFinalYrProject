@@ -1,7 +1,7 @@
 .Footer {
   padding: 10px 0;
   min-width: 100%;
-  background-color: var(--green);
+  background-color: var(--black);
   font-size: 1.3rem;
   display: flex;
   flex-direction: column;
@@ -23,8 +23,7 @@
 }
 
 .iconSection p, .pageLinksSection p {
-  -webkit-text-decoration: underline 1.5px;
-          text-decoration: underline 1.5px;
+  color: var(--green);
   font-size: 1.7rem;
   font-weight: 700;
 }
