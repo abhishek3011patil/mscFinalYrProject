@@ -1,0 +1,66 @@
+.SongTableColumn{
+  margin-top: 20px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: start;
+  background-color: var(--black);
+  max-width: 22rem;
+  img{
+    max-width: 20rem;
+    margin-bottom: 5px;
+
+  }
+
+  .Song_name{
+    font-weight: 700;
+    font-size: 1.5rem;
+    white-space: pre-line;
+    color: var(--green);
+    
+  }
+
+  .Artist_name{
+    font-weight:500 ;
+    color: white;
+  }
+
+  //width: 22rem;
+
+}
+
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+
+  .SongTableColumn{
+
+    
+    img{
+      max-width: 20rem;
+    }
+  
+    //width: 22rem;
+  
+  }
+}
+
+/* for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+  
+
+
+/* For laptop devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+/* For desktop devices */
+@media only screen and (min-width: 1025px) {
+
+}
+
+
+

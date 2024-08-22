@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$tools-bg: white;
+$primary-color: white;
+$secondary-color: red;
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 420px;
+  margin: 50px 50px;
+  gap: 10px;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid $primary-color;
+
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  //box-sizing: border-box;
+  //outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid $tools-bg;
+}
+
+.formContainer textarea {
+  height: 150px;
+  line-height: 150%;
+
+  color: black;
+}
+
+.formButton {
+  display: block;
+  background-color: $primary-color; /* Change this to your desired button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space above the button */
+  display: inline-block; /* Ensure it is inline-block */
+}
+
+.formButton:hover {
+  background-color: $secondary-color; /* Darker shade on hover */
+}
