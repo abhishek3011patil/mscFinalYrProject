@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+//import './Footer.css'
 import { CiInstagram, CiFacebook, CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Form from '../Form/Form';
@@ -7,13 +7,13 @@ import Form from '../Form/Form';
 function Footer() {
   return (
 
-    <div className='Footer'>
+    <div className='Footer bg-black text-lime-500 font-medium flex flex-col justify-center items-center gap-4'>
 
 
-      <div className="pageLinksSection">
+      <div className="pageLinksSection flex flex-col justify-center items-center gap-2">
         <p>Useful links:</p>
 
-        <div className="pageLinks">
+        <div className="pageLinks flex gap-5  ">
 
           <a href="">Home</a>
           <a href="">Playlist Generator</a>
@@ -23,15 +23,15 @@ function Footer() {
 
       </div>
 
-      <div className="iconSection">
+      <div className="iconSection flex flex-col justify-center items-center gap-2 ">
 
-        <p>Also Contact Us on:</p>
+        <p className=''>Also Contact Us on:</p>
 
-        <div className="iconsList">
-          <CiInstagram size={40} />
-          <CiFacebook size={40} />
-          <CiLinkedin size={40} />
-          <FaGithub size={40} />
+        <div className="iconsList text bold text-white flex gap-5 ">
+          <CiInstagram className='hover:text-lime-500' size={40} />
+          <CiFacebook className='hover:text-lime-500'size={40} />
+          <CiLinkedin className='hover:text-lime-500'size={40} />
+          <FaGithub className='hover:text-lime-500'size={40} />
         </div>
 
       </div>
