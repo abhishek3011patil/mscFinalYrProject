@@ -15,9 +15,9 @@ function Footer() {
 
         <div className="pageLinks flex gap-5  ">
 
-          <a href="">Home</a>
-          <a href="">Playlist Generator</a>
-          <a href="">Contact</a>
+          <a  className = "text-white hover:text-lime-500" href="">Home</a>
+          <a className = " text-white hover:text-lime-500" href="">Playlist Generator</a>
+          <a  className = " text-white hover:text-lime-500" href="">Contact</a>
 
         </div>
 
