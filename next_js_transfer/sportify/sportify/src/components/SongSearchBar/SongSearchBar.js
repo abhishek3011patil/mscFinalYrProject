@@ -10,7 +10,7 @@ function SongSearchBar() {
 
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:5000/get-songs')
+      .get('http://localhost:3000/songs/')
       .then(res => {
         setSongsNames(res.data);
       })
@@ -33,7 +33,7 @@ function SongSearchBar() {
       const searchText = event.target.value.toLowerCase();
       const filteredSongs = filteredSongNames.filter(song => song.toLowerCase().includes(searchText));
       displaySuggestions(filteredSongs, 10);
-    
+
     };
 
     searchInput.addEventListener('input', handleInput);
@@ -43,12 +43,12 @@ function SongSearchBar() {
     };
   }, [filteredSongNames]);
 
-  
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const searchInput = document.getElementById('query');
-    
+
     setSelectedSong(searchInput.value);
     console.log(selectedSong)
   };
