@@ -1,79 +1,61 @@
-"use client";
-import { useForm } from "react-hook-form";
-import axios from "axios";
-import { useRouter } from "next/router";
 
-export default function Page() {
-  //   const {
-  //     register,
-  //     handleSubmit,
-  //     formState: { errors },
-  //   } = useForm();
-  //   const router = useRouter();
+'use client'
+import { useState } from "react"
 
-  //   const onSubmit = async (data) => {
-  //     try {
-  //       await axios.post("/api/register", data);
-  //       router.push("../SignUp");
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
+export default function Page () 
+ {
 
-  function handleSubmit(Onsubmit) {
-    console.log("hellos");
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  })
+  const handleSubmit = () =>{
+
   }
-
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold mb-6">Register</h2>
-        <form className="space-y-4">
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Email
-            </label>
+  const handleChange = () =>{
+    
+  }
+  
+  return(<div>
+ <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+        <h1 className="text-2xl font-semibold mb-6">Sign In</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
             <input
-              id="email"
               type="email"
-              //  {...register("email", { required: "Email is required" })}
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+              placeholder="you@example.com"
+              required
             />
-            {/* {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email.message}</p>
-            )} */}
           </div>
-          <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
+          <div className="mb-6">
+            <label className="block text-gray-700 mb-2" htmlFor="password">Password</label>
             <input
-              id="password"
               type="password"
-              //{...register("password", { required: "Password is required" })}
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+              placeholder="********"
+              required
             />
-
-            {
-              //errors.password && (
-              //   <p className="text-red-500 text-sm">{errors.password.message}</p>
-              //   )
-            }
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-md"
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
-            Register
+            Sign In
           </button>
         </form>
       </div>
     </div>
-  );
+</div>
+)
 }
