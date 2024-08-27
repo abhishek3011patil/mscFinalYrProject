@@ -1,3 +1,6 @@
+
+
+'use client'
 import React from 'react'
 //import './Footer.css'
 import { CiInstagram, CiFacebook, CiLinkedin } from "react-icons/ci";
@@ -15,9 +18,9 @@ function Footer() {
 
         <div className="pageLinks flex gap-5  ">
 
-          <a  className = "text-white hover:text-lime-500" href="">Home</a>
-          <a className = " text-white hover:text-lime-500" href="">Playlist Generator</a>
-          <a  className = " text-white hover:text-lime-500" href="">Contact</a>
+          <a className="text-white hover:text-lime-500" href="">Home</a>
+          <a className=" text-white hover:text-lime-500" href="">Playlist Generator</a>
+          <a className=" text-white hover:text-lime-500" href="">Contact</a>
 
         </div>
 
@@ -29,9 +32,9 @@ function Footer() {
 
         <div className="iconsList text bold text-white flex gap-5 ">
           <CiInstagram className='hover:text-lime-500' size={40} />
-          <CiFacebook className='hover:text-lime-500'size={40} />
-          <CiLinkedin className='hover:text-lime-500'size={40} />
-          <FaGithub className='hover:text-lime-500'size={40} />
+          <CiFacebook className='hover:text-lime-500' size={40} />
+          <CiLinkedin className='hover:text-lime-500' size={40} />
+          <FaGithub className='hover:text-lime-500' size={40} />
         </div>
 
       </div>
